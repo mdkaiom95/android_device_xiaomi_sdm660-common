@@ -164,8 +164,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q660-13149-1
 
-# Perf
+# Proximity
 PRODUCT_PROPERTY_OVERRIDES += \
+    gsm.proximity.enable=true
+
+# QCOM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.timed.enable=true \
+    persist.vendor.dpm.feature=1 \
+    persist.vendor.qcomsysd.enabled=1 \
     ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
