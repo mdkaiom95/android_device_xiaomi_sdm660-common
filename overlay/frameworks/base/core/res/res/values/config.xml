@@ -361,4 +361,7 @@
    <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
+   <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+   <bool name="config_intrusiveNotificationLed">true</bool>
+
 </resources>
