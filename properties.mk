@@ -96,10 +96,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.video.disable.ubwc=1 \
     vidc.enc.dcvs.extra-buff-count=2
 
-# Codec2 switch
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2
-
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
@@ -138,9 +134,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
     vendor.vidc.dec.enable.downscalar=1 \
-    vendor.vidc.enc.disable_bframes=1
+    vendor.vidc.enc.disable_bframes=1 \
+    vendor.vidc.enc.disable.pq=true
 
 # Netflix
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
