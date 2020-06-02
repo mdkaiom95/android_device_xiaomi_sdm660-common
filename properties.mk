@@ -164,6 +164,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q660-13149-1
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.qti.sys.fw.bg_apps_limit=60 \
+    ro.vendor.at_library=libqti-at.so \
+    vendor.enable.prefetch=0 \
+    vendor.iop.enable_iop=1 \
+    vendor.iop.enable_uxe=1 \
+    vendor.iop.enable_prefetch_ofr=0 \
+    vendor.perf.gestureflingboost.enable=true \
+    vendor.perf.iop_v3.enable=true \
+    vendor.perf.iop_v3.enable.debug=false
+
 # Proximity
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.proximity.enable=true
@@ -172,8 +185,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
     persist.vendor.dpm.feature=1 \
-    persist.vendor.qcomsysd.enabled=1 \
-    ro.vendor.extension_library=libqti-perfd-client.so
+    persist.vendor.dpm.nsrm.bkg.evt=3955 \
+    persist.vendor.qcomsysd.enabled=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
