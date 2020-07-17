@@ -272,9 +272,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
     debug.sf.disable_backpressure= 1 \
-    debug.cpurend.vsync=false  \
     debug.hwui.use_buffer_age=false  \
     persist.hwc.enable_vds=1 \
     ro.qualcomm.cabl=0
