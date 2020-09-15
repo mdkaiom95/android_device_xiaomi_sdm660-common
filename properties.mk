@@ -98,11 +98,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.bluetooth.a2dp_offload.supported=true \
     vendor.audio.feature.a2dp_offload.enable=true
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.bluetooth.a2dp_offload.disabled=false \
-    ro.bluetooth.a2dp_offload.supported=true \
-    vendor.audio.feature.a2dp_offload.enable=true
-
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
